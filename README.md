@@ -58,7 +58,7 @@ System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienn�
 
 5.  **🆘 Tryb Ratunkowy Wi-Fi (Access Point):**
     * Jesteś w podróży lub zmieniłeś router? Żaden problem!
-    * Jeśli urządzenie po uruchomieniu nie połączy się ze znaną siecią Wi-Fi, po 2 minutach automatycznie wygeneruje własną sieć ratunkową (`PrimeNode_AP`). Połącz się z nią, wpisz w przeglądarkę `http://192.168.4.1` i wygodnie dodaj nowe hasło do Wi-Fi z poziomu Dashboardu.
+    * Jeśli urządzenie po uruchomieniu nie połączy się ze znaną siecią Wi-Fi, po 2 minutach automatycznie wygeneruje własną sieć ratunkową (`PrimeNode_AP`). Połącz się z nią wpisując hasło (`primenode123`), wpisz w przeglądarkę `http://192.168.4.1` i wygodnie dodaj nowe łącze Wi-Fi z poziomu Dashboardu.
 
 6.  **🌐 Network Roaming (Baza Sieci):**
     * Wbudowany menedżer sieci w zakładce *Konfiguracja*.
