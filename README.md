@@ -1,4 +1,4 @@
-# PrimeNode - RPI V1 Hotspot System
+# PrimeNode - Raspberry PI Hotspot System
 ### Powered by SvxLink | Developed by SQ7UTP
 
 Witamy w oficjalnym repozytorium systemu **PrimeNode**. 
