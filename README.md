@@ -37,60 +37,48 @@ Gotowy do wgrania obraz systemu (`.img`) znajduje się w sekcji **Releases** po 
 
 ## ✨ Główne Funkcje / Key Features
 
-System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienną pracę z hotspotem (Zaktualizowano w **V1.3**!):
+System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienną pracę z hotspotem (Zaktualizowano do **V1.4**!):
 
-1.  **🎛️ Smart Config (NOWOŚĆ!):**
-    * Koniec z ręcznym wpisywaniem numerów grup TG w konfiguracji!
-    * Kliknij pole *Startowe TG* lub *Monitorowane TG*, by otworzyć dotykowy panel wyboru.
-    * System automatycznie zaciąga Twoje ulubione grupy prosto z Twoich własnych zakładek DTMF.
+1.  **🌍 System Raportowania APRS (NOWOŚĆ!):**
+    * Twój hotspot może automatycznie wysyłać swoją pozycję oraz parametry radiowe (moc, zysk anteny, wysokość) do ogólnoświatowej sieci APRS-IS.
+    * Wbudowany inteligentny konwerter współrzędnych i wybór dedykowanych ikon (np. Węzeł EchoLink, Dom, Samochód).
 
-2.  **⚡ Szybkie Przełączanie (Quick-Dial) i Wizualizacja TX (NOWOŚĆ!):**
+2.  **🔗 Inteligentna Wyszukiwarka EchoLink (NOWOŚĆ!):**
+    * Wbudowana w zakładkę DTMF szybka wyszukiwarka Live (baza serwerów synchronizuje się w tle).
+    * Wpisz minimum 3 znaki, aby w ułamku sekundy przeszukać tysiące aktywnych węzłów na świecie, natychmiast nawiązać połączenie lub zapisać stację w swojej prywatnej książce adresowej.
+
+3.  **💾 Moduł Kopii Zapasowych (NOWOŚĆ!):**
+    * Zabezpiecz swoją pracę! Pobierz pełną konfigurację, dodane sieci, parametry audio i własne przyciski DTMF do jednego pliku ZIP. 
+    * Przywróć cały system do działania jednym kliknięciem po zmianie karty pamięci.
+
+4.  **🎛️ Smart Config:**
+    * Koniec z ręcznym wpisywaniem numerów grup TG w konfiguracji! Kliknij pole *Startowe TG* lub *Monitorowane TG*, by otworzyć dotykowy panel wyboru, który zaciąga Twoje ulubione grupy prosto z zakładek DTMF.
+
+5.  **📱 Interaktywny DTMF, Książka Adresowa i Zakładki:**
+    * Nowoczesny edytor z obsługą **przeciągania kafelków (Drag & Drop)**.
+    * Twórz własne, nielimitowane zakładki (np. "Echolink Polska", "Ulubione TG") grupujące przyciski dla Reflektora i EchoLinka w spójną książkę adresową.
+
+6.  **⚡ Szybkie Przełączanie (Quick-Dial) i Wizualizacja TX:**
     * Gdy ktoś nadaje, jego kafelek na liście i znacznik na mapie dynamicznie pulsują na czerwono.
     * Kliknij pulsujący kafelek w zakładce Nodes, aby jednym przyciskiem natychmiast przełączyć swoje radio na grupę (TG), na której toczy się rozmowa.
 
-3.  **📱 Inteligentne Ikony i Dane Radiowe (NOWOŚĆ!):**
-    * Lista węzłów automatycznie rozpoznaje oprogramowanie stacji i przydziela ikonę: Radio (📻), Aplikacja mobilna (📱) lub PC (💻).
-    * Najechanie na węzeł zdradza dokładną częstotliwość (QRG) oraz ton CTCSS korespondenta.
-
-4.  **📻 Multi-Hardware (Wybór Radia):**
+7.  **📻 Multi-Hardware (Wybór Radia):**
     * Wbudowana obsługa popularnych płytek nakładkowych **SHARI (SA818)**.
-    * Tryb pracy ręcznej dla entuzjastów: możliwość podpięcia zewnętrznego radia ("ręczniaka") przez kartę dźwiękową USB z chipem **CM108**. System pozwala na samodzielne przypisanie pinów GPIO dla sygnałów PTT oraz COS z poziomu panelu WWW.
+    * Tryb pracy dla zewnętrznych radii przez kartę dźwiękową USB (**CM108**). System pozwala na samodzielne przypisanie pinów GPIO dla sygnałów PTT oraz COS z poziomu panelu WWW.
 
-5.  **🆘 Tryb Ratunkowy Wi-Fi (Access Point):**
-    * Jesteś w podróży lub zmieniłeś router? Żaden problem!
-    * Jeśli urządzenie po uruchomieniu nie połączy się ze znaną siecią Wi-Fi, po 2 minutach automatycznie wygeneruje własną sieć ratunkową (`PrimeNode_AP`). Połącz się z nią wpisując hasło (`primenode123`), wpisz w przeglądarkę `http://192.168.4.1` i wygodnie dodaj nowe łącze Wi-Fi z poziomu Dashboardu.
+8.  **🆘 Tryb Ratunkowy Wi-Fi (Access Point):**
+    * Jesteś w podróży lub zmieniłeś router? Jeśli urządzenie po uruchomieniu nie połączy się ze znaną siecią Wi-Fi, po 2 minutach wygeneruje własną sieć ratunkową (`PrimeNode_AP`). Połącz się z nią, wejdź na `http://192.168.4.1` i wygodnie dodaj nowe Wi-Fi z poziomu Dashboardu.
 
-6.  **🌐 Network Roaming (Baza Sieci):**
-    * Wbudowany menedżer sieci w zakładce *Konfiguracja*.
-    * Możliwość zdefiniowania wielu serwerów (Reflektorów) z różnymi loginami/hasłami.
-    * Szybkie przełączanie sieci kodami DTMF z radia: `555` + `ID` + `#`.
+9.  **🌐 Network Roaming (Baza Sieci):**
+    * Wbudowany menedżer sieci. Definiuj wiele serwerów (Reflektorów) z różnymi hasłami i przypisanymi zapowiedziami audio.
+    * Szybkie przełączanie sieci kodami DTMF z radia: `555` + `ID` + `#`. System sam zrestartuje usługę i wejdzie na Twoją domyślną grupę.
 
-7.  **🔄 System Aktualizacji (OTA Update):**
-    * Wbudowany mechanizm aktualizacji Dashboardu i skryptów systemowych.
-    * Pobieranie poprawek i nowości jednym kliknięciem w zakładce *Zasilanie* (bez konieczności ponownego wgrywania obrazu na kartę).
+10. **🔄 System Aktualizacji (OTA Update):**
+    * Wbudowany mechanizm aktualizacji. Pobieraj poprawki i nowości (w tym modyfikacje skryptów i crontab) jednym kliknięciem w zakładce *Zasilanie*, bez konieczności ponownego wgrywania obrazu na kartę.
 
-8.  **📱 Inteligentny DTMF (Drag & Drop):**
-    * Nowoczesny edytor przycisków z obsługą **przeciągania kafelków** (również na telefonie).
-    * Tworzenie własnych zakładek i makr bez edycji plików tekstowych.
-
-9.  **💻 Web Terminal (SSH):**
+11. **💻 Web Terminal (SSH) i Audio Mixer:**
     * Pełny dostęp do konsoli systemowej bezpośrednio z przeglądarki.
-    * Nie potrzebujesz Putty/Terminala – zarządzaj systemem z dowolnego urządzenia.
-
-10. **🎚️ Audio Mixer GUI:**
-    * Wbudowany mikser ALSA w Dashboardzie.
-    * Precyzyjna regulacja poziomów (Mic Boost, ADC Gain, DAC Vol) suwakami – koniec z przesterowanym audio!
-
-11. **🌍 Multi-Language (PL/EN):**
-    * Pełne wsparcie dla języka **Polskiego** i **Angielskiego**.
-    * Przełącznik języka interfejsu (flagi) oraz zmiana języka komunikatów głosowych SvxLink w Configu.
-
-12. **🚀 Optymalizacja Systemu:**
-    * Logi systemowe zapisywane w pamięci RAM (`/dev/shm`) – oszczędza kartę SD.
-    * Auto-Proxy dla EchoLink (rozwiązuje problemy z LTE/GSM).
-
-13. **📺 PrimeNode Monitor Support:**
-    * Wbudowana obsługa zewnętrznych wyświetlaczy OLED dla dedykowanego oprogramowania monitorującego.
+    * Wbudowany mikser ALSA w Dashboardzie. Precyzyjna regulacja poziomów (Mic Boost, ADC Gain, DAC Vol) suwakami – koniec z przesterowanym audio!
 
 ---
 
@@ -104,15 +92,15 @@ System PrimeNode posiada wbudowaną integrację z autorskim oprogramowaniem moni
 
 ---
 
-## 📸 Galeria / Screenshots (Nowości V1.3)
+## 📸 Galeria / Screenshots (V1.5)
 
-| **Smart Config (Wybór TG)** | **Quick-Dial (Szybkie Przełączanie)** |
+| **Smart Config (Wybór TG)** | **EchoLink Wyszukiwarka Live** |
 | :---: | :---: |
-| ![Smart Config](images/new_config.jpg) | ![Quick Dial](images/new_node_tg.jpg) |
+| ![Smart Config](images/new_config.jpg) | ![EchoLink Search](images/echolink_search.jpg) |
 
-| **Inteligentne Ikony & Dane TX** | **Ekran Powitalny (Changelog)** |
+| **Ustawienia APRS** | **Backup & Restore** |
 | :---: | :---: |
-| ![Ikony](images/new_node_icons.jpg) | ![Changelog](images/changelog.jpg) |
+| ![APRS Config](images/aprs_config.jpg) | ![Backup](images/backup.jpg) |
 
 | **Dashboard (Live Monitor)** | **Nodes List** |
 | :---: | :---: |
