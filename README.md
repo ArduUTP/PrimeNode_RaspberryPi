@@ -37,7 +37,7 @@ Gotowy do wgrania obraz systemu (`.img`) znajduje się w sekcji **Releases** po 
 
 ## ✨ Główne Funkcje / Key Features
 
-System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienną pracę z hotspotem (Zaktualizowano do **V1.4**!):
+System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienną pracę z hotspotem (Zaktualizowano do **V1.5**!):
 
 1.  **🌍 System Raportowania APRS (NOWOŚĆ!):**
     * Twój hotspot może automatycznie wysyłać swoją pozycję oraz parametry radiowe (moc, zysk anteny, wysokość) do ogólnoświatowej sieci APRS-IS.
