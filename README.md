@@ -7,6 +7,15 @@ PrimeNode to projekt rozwojowy, tworzony z myślą o prostocie i stabilności �
 
 ---
 
+## 🎉 Nowości w wersji 1.7
+
+* **⚙️ Aktualizacja silnika SvxLink (Core Update):** W zakładce *Zasilanie* pojawił się nowy przycisk pozwalający na aktualizację samego rdzenia (silnika) SvxLink bezpośrednio z poziomu panelu WWW. Po jego kliknięciu system automatycznie zweryfikuje obecną wersję oprogramowania – jeśli masz już najnowszą stabilną wersję (`26.05.1`), otrzymasz stosowny komunikat i proces zostanie przerwany, aby oszczędzić czas. Jeśli aktualizacja jest dostępna, skrypt pobierze źródła, skompiluje nowy rdzeń i zrestartuje urządzenie po zakończeniu pracy.
+* **🛠️ Poprawki trybu AP (Access Point):** Wyeliminowano problemy z łączeniem się z awaryjną siecią Wi-Fi `PrimeNode_AP` (szczególnie występujące na laptopach z systemem Windows dzięki poprawnemu wdrożeniu parametrów PMF oraz WPS). Punkt dostępowy działa teraz stabilnie i łączy się bezbłędnie na każdym sprzęcie.
+* **🔧 Poprawki błędów hotspota:** Usunięto pomniejsze błędy w kodzie skryptów, zwiększając ogólną stabilność systemu i płynność działania interfejsu użytkownika.
+* **📋 Zaktualizowane Grupy Rozmowne (TG):** W najnowszym wydaniu zaktualizowano domyślne listy grup w zakładkach **SQLink** oraz **FM Poland** (usunięto nieaktywne grupy i dodano najnowsze pozycje udostępnione przez operatorów sieci).
+
+---
+
 ## 📥 GŁÓWNY OBRAZ SYSTEMU / MAIN SYSTEM IMAGE
 
 Gotowy do wgrania obraz systemu (`.img`) znajduje się w sekcji **Releases** po prawej stronie tego repozytorium. Nie musisz kompilować kodu ręcznie – pobierz, wgraj i używaj.
@@ -37,49 +46,52 @@ Gotowy do wgrania obraz systemu (`.img`) znajduje się w sekcji **Releases** po 
 
 ## ✨ Główne Funkcje / Key Features
 
-System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienną pracę z hotspotem (Zaktualizowano do **V1.6**!):
+System PrimeNode oferuje zestaw zaawansowanych funkcji ułatwiających codzienną pracę z hotspotem (Zaktualizowano do **V1.7**!):
 
-1.  **🌍 System Raportowania APRS:**
+1. **🌍 System Raportowania APRS:**
     * Twój hotspot może automatycznie wysyłać swoją pozycję oraz parametry radiowe (moc, zysk anteny, wysokość) do ogólnoświatowej sieci APRS-IS.
     * Wbudowany inteligentny konwerter współrzędnych i wybór dedykowanych ikon (np. Węzeł EchoLink, Dom, Samochód).
 
-2.  **🔗 Inteligentna Wyszukiwarka EchoLink:**
+2. **🔗 Inteligentna Wyszukiwarka EchoLink:**
     * Wbudowana w zakładkę DTMF szybka wyszukiwarka Live (baza serwerów synchronizuje się w tle).
     * Wpisz minimum 3 znaki, aby w ułamku sekundy przeszukać tysiące aktywnych węzłów na świecie, natychmiast nawiązać połączenie lub zapisać stację w swojej prywatnej książce adresowej.
 
-3.  **💾 Moduł Kopii Zapasowych:**
+3. **💾 Moduł Kopii Zapasowych:**
     * Zabezpiecz swoją pracę! Pobierz pełną konfigurację, dodane sieci, parametry audio i własne przyciski DTMF do jednego pliku ZIP. 
     * Przywróć cały system do działania jednym kliknięciem po zmianie karty pamięci.
 
-4.  **🎛️ Smart Config:**
+4. **🎛️ Smart Config:**
     * Koniec z ręcznym wpisywaniem numerów grup TG w konfiguracji! Kliknij pole *Startowe TG* lub *Monitorowane TG*, by otworzyć dotykowy panel wyboru, który zaciąga Twoje ulubione grupy prosto z zakładek DTMF.
 
-5.  **📱 Interaktywny DTMF, Książka Adresowa i Zakładki:**
+5. **📱 Interaktywny DTMF, Książka Adresowa i Zakładki:**
     * Nowoczesny edytor z obsługą **przeciągania kafelków (Drag & Drop)**.
     * Twórz własne, nielimitowane zakładki (np. "Echolink Polska", "Ulubione TG") grupujące przyciski dla Reflektora i EchoLinka w spójną książkę adresową.
 
-6.  **⚡ Szybkie Przełączanie (Quick-Dial) i Wizualizacja TX:**
+6. **⚡ Szybkie Przełączanie (Quick-Dial) i Wizualizacja TX:**
     * Gdy ktoś nadaje, jego kafelek na liście i znacznik na mapie dynamicznie pulsują na czerwono.
     * Kliknij pulsujący kafelek w zakładce Nodes, aby jednym przyciskiem natychmiast przełączyć swoje radio na grupę (TG), na której toczy się rozmowa.
 
-7.  **📻 Multi-Hardware (Wybór Radia):**
+7. **📻 Multi-Hardware (Wybór Radia):**
     * Wbudowana i zautomatyzowana obsługa zaawansowanych płytek **RF Guru** ze sprzętowym kodekiem audio I2S (WM8960) z poziomu przeglądarki.
     * Wbudowana obsługa popularnych płytek nakładkowych **SHARI (SA818)**.
     * Tryb pracy dla zewnętrznych radii przez kartę dźwiękową USB (**CM108**). System pozwala na samodzielne przypisanie pinów GPIO dla sygnałów PTT oraz COS z poziomu panelu WWW.
 
-8.  **🆘 Tryb Ratunkowy Wi-Fi (Access Point):**
+8. **🆘 Tryb Ratunkowy Wi-Fi (Access Point):**
     * Jesteś w podróży lub zmieniłeś router? Jeśli urządzenie po uruchomieniu nie połączy się ze znaną siecią Wi-Fi, po 2 minutach wygeneruje własną sieć ratunkową (`PrimeNode_AP`). Połącz się z nią, wejdź na `http://192.168.4.1` i wygodnie dodaj nowe Wi-Fi z poziomu Dashboardu.
 
-9.  **🌐 Network Roaming (Baza Sieci):**
+9. **🌐 Network Roaming (Baza Sieci):**
     * Wbudowany menedżer sieci. Definiuj wiele serwerów (Reflektorów) z różnymi hasłami i przypisanymi zapowiedziami audio.
     * Szybkie przełączanie sieci kodami DTMF z radia: `555` + `ID` + `#`. System sam zrestartuje usługę i wejdzie na Twoją domyślną grupę.
 
-10. **🔄 System Aktualizacji (OTA Update):**
-    * Wbudowany mechanizm aktualizacji. Pobieraj poprawki i nowości (w tym modyfikacje skryptów i crontab) jednym kliknięciem w zakładce *Zasilanie*, bez konieczności ponownego wgrywania obrazu na kartę.
+10. **🔄 System Aktualizacji Skryptów (OTA Update):**
+    * Wbudowany mechanizm aktualizacji. Pobieraj poprawki interfejsu i nowości (w tym modyfikacje skryptów i crontab) jednym kliknięciem, bez konieczności ponownego wgrywania obrazu na kartę.
 
 11. **💻 Web Terminal (SSH) i Audio Mixer:**
     * Pełny dostęp do konsoli systemowej bezpośrednio z przeglądarki.
     * Wbudowany mikser ALSA w Dashboardzie. Precyzyjna regulacja poziomów (Mic Boost, ADC Gain, DAC Vol) suwakami – koniec z przesterowanym audio!
+
+12. **⚙️ Aktualizacja silnika SvxLink (Core Update):**
+    * Dedykowany moduł pozwalający na bezpośrednią kompilację i wdrożenie nowej wersji rdzenia SvxLink jednym kliknięciem. System weryfikuje aktualną wersję oprogramowania by nie wykonywać niepotrzebnych kompilacji, jeśli sprzęt jest w 100% zaktualizowany.
 
 ---
 
@@ -93,7 +105,7 @@ System PrimeNode posiada wbudowaną integrację z autorskim oprogramowaniem moni
 
 ---
 
-## 📸 Galeria / Screenshots (V1.5)
+## 📸 Galeria / Screenshots (V1.7)
 
 | **Smart Config (Wybór TG)** | **EchoLink Wyszukiwarka Live** |
 | :---: | :---: |
